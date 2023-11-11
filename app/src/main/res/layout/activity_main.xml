@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the application"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            android:layout_width="282dp"
+            android:layout_height="70dp"
+            android:text="Login"
+            android:backgroundTint="@color/purple_200"
+            app:cornerRadius="32dp"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerbtn"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:text="Register"
+            android:backgroundTint="@color/purple_200"
+            app:cornerRadius="32dp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

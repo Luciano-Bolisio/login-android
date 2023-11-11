@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp" tools:ignore="NotSibling">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="477dp"
+            android:orientation="vertical"
+            android:padding="28dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/white"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/passwordUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:alpha="0.7"
+                android:textStyle="bold" />
+            />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/getIntoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:backgroundTint="@color/purple_200"
+                app:cornerRadius="32dp"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or login with"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/google"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/facebook"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/twitter"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mainBtn"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/back"
+        tools:layout_editor_absoluteY="61dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
